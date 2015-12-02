@@ -1,0 +1,15 @@
+"darkrp"
+{
+	"base"		"sandbox"
+    "title"  "DarkRP2"
+    "version"   "1.0"
+    "menusystem"	"1"
+
+    "author_name"   "MonsterDevil and AlexCookie"
+    "author_email"  ""
+    "author_url"    "https://vk.com/id271153652 , https://vk.com/pravedniov"
+
+    "icon"  ""
+    "info"  ""
+    "hide"  "0"
+}
