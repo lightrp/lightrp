@@ -99,7 +99,7 @@ TEAM_MOB = DarkRP.createJob("Глава бандитов", {
         "models/player/Group01/Male_08.mdl",
         "models/player/Group01/Male_09.mdl"
     },
-    description = [[управляет всеми бандитами в городе.]],
+    description = [[Управляет всеми бандитами в городе.]],
     weapons = {"lockpick", "unarrest_stick"},
     command = "mobboss",
     max = 1,
@@ -128,8 +128,7 @@ TEAM_GUN = DarkRP.createJob("Оружейник", {
         "models/player/Group01/Male_08.mdl",
         "models/player/Group01/Male_09.mdl"
     },
-    description = [[A Gun Dealer is the only person who can sell guns to other people.
-        Make sure you aren't caught selling illegal firearms to the public! You might get arrested!]],
+    description = [[Управляет всеми бандитами]],
     weapons = {},
     command = "gundealer",
     max = 2,
@@ -143,10 +142,7 @@ TEAM_GUN = DarkRP.createJob("Оружейник", {
 TEAM_MEDIC = DarkRP.createJob("Врач", {
     color = Color(47, 79, 79, 255),
     model = "models/player/kleiner.mdl",
-    description = [[With your medical knowledge you work to restore players to full health.
-        Without a medic, people cannot be healed.
-        Left click with the Medical Kit to heal other players.
-        Right click with the Medical Kit to heal yourself.]],
+    description = [[Врач лечит граждан города.]],
     weapons = {"med_kit"},
     command = "medic",
     max = 3,
@@ -161,13 +157,7 @@ TEAM_MEDIC = DarkRP.createJob("Врач", {
 TEAM_CHIEF = DarkRP.createJob("Майор полиции", {
     color = Color(20, 20, 255, 255),
     model = "models/player/combine_soldier_prisonguard.mdl",
-    description = [[The Chief is the leader of the Civil Protection unit.
-        Coordinate the police force to enforce law in the city.
-        Hit a player with arrest baton to put them in jail.
-        Bash a player with a stunstick and they may learn to obey the law.
-        The Battering Ram can break down the door of a criminal, with a warrant for his/her arrest.
-        Type /wanted <name> to alert the public to the presence of a criminal.
-        Type /jailpos to set the Jail Position]],
+    description = [[Майор полици руководит всеми полицейскими в городе.]],
     weapons = {"arrest_stick", "unarrest_stick", "weapon_deagle2", "stunstick", "door_ram", "weaponchecker"},
     command = "chief",
     max = 1,
@@ -186,14 +176,7 @@ TEAM_CHIEF = DarkRP.createJob("Майор полиции", {
 TEAM_MAYOR = DarkRP.createJob("Мэр", {
     color = Color(150, 20, 20, 255),
     model = "models/player/breen.mdl",
-    description = [[The Mayor of the city creates laws to govern the city.
-    If you are the mayor you may create and accept warrants.
-    Type /wanted <name>  to warrant a player.
-    Type /jailpos to set the Jail Position.
-    Type /lockdown initiate a lockdown of the city.
-    Everyone must be inside during a lockdown.
-    The cops patrol the area.
-    /unlockdown to end a lockdown]],
+    description = [[Мэр управляет экономикой города и гражданами.]],
     weapons = {},
     command = "mayor",
     max = 1,
@@ -223,11 +206,7 @@ TEAM_HOBO = DarkRP.createJob("Бездомный", {
         "models/player/Group01/Male_08.mdl",
         "models/player/Group01/Male_09.mdl"
 	},
-    description = [[The lowest member of society. Everybody laughs at you.
-        You have no home.
-        Beg for your food and money
-        Sing for everyone who passes to get money
-        Make your own wooden home somewhere in a corner or outside someone else's door]],
+    description = [[Изгой в обществе города.]],
     weapons = {"weapon_bugbait"},
     command = "hobo",
     max = 5,
@@ -259,9 +238,7 @@ if not DarkRP.disabledDefaults["modules"]["hungermod"] then
         "models/player/Group01/Male_08.mdl",
         "models/player/Group01/Male_09.mdl"
 		},
-        description = [[As a cook, it is your responsibility to feed the other members of your city.
-            You can spawn a microwave and sell the food you make:
-            /buymicrowave]],
+        description = [[Повар готовит еду для жителей города.]],
         weapons = {},
         command = "cook",
         max = 2,
