@@ -32,7 +32,7 @@ TEAM_CITIZEN = DarkRP.createJob("Гражданин", {
     vote = false,
     hasLicense = false,
     candemote = false,
-    category = "Citizens",
+    category = "Мирны",
 })
 
 TEAM_POLICE = DarkRP.createJob("Рядовой полиции", {
@@ -49,7 +49,7 @@ TEAM_POLICE = DarkRP.createJob("Рядовой полиции", {
     ammo = {
         ["pistol"] = 90,
     },
-    category = "Civil Protection",
+    category = "Государство",
 })
 
 TEAM_GANG = DarkRP.createJob("Бандит", {
@@ -78,7 +78,36 @@ TEAM_GANG = DarkRP.createJob("Бандит", {
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Gangsters",
+    category = "Криминал",
+})
+
+TEAM_GANG = DarkRP.createJob("Вор", {
+    color = Color(75, 75, 75, 255),
+    model = {
+        "models/player/Group01/Female_01.mdl",
+        "models/player/Group01/Female_02.mdl",
+        "models/player/Group01/Female_03.mdl",
+        "models/player/Group01/Female_04.mdl",
+        "models/player/Group01/Female_06.mdl",
+        "models/player/group01/male_01.mdl",
+        "models/player/Group01/Male_02.mdl",
+        "models/player/Group01/male_03.mdl",
+        "models/player/Group01/Male_04.mdl",
+        "models/player/Group01/Male_05.mdl",
+        "models/player/Group01/Male_06.mdl",
+        "models/player/Group01/Male_07.mdl",
+        "models/player/Group01/Male_08.mdl",
+        "models/player/Group01/Male_09.mdl"
+    },
+    description = [[Крадёт чужие вещи.]],
+    weapons = {},
+    command = "gangster",
+    max = 3,
+    salary = GAMEMODE.Config.normalsalary,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Криминал",
 })
 
 TEAM_MOB = DarkRP.createJob("Глава бандитов", {
@@ -107,7 +136,7 @@ TEAM_MOB = DarkRP.createJob("Глава бандитов", {
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Gangsters",
+    category = "Криминал",
 })
 
 TEAM_GUN = DarkRP.createJob("Оружейник", {
@@ -136,7 +165,7 @@ TEAM_GUN = DarkRP.createJob("Оружейник", {
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Citizens",
+    category = "Продавцы",
 })
 
 TEAM_MEDIC = DarkRP.createJob("Врач", {
@@ -151,7 +180,7 @@ TEAM_MEDIC = DarkRP.createJob("Врач", {
     vote = false,
     hasLicense = false,
     medic = true,
-    category = "Citizens",
+    category = "Мирные",
 })
 
 TEAM_CHIEF = DarkRP.createJob("Майор полиции", {
@@ -170,7 +199,7 @@ TEAM_CHIEF = DarkRP.createJob("Майор полиции", {
     ammo = {
         ["pistol"] = 60,
     },
-    category = "Civil Protection",
+    category = "Государство",
 })
 
 TEAM_MAYOR = DarkRP.createJob("Мэр", {
@@ -185,7 +214,7 @@ TEAM_MAYOR = DarkRP.createJob("Мэр", {
     vote = true,
     hasLicense = false,
     mayor = true,
-    category = "Civil Protection",
+    category = "Государство",
 })
 
 TEAM_HOBO = DarkRP.createJob("Бездомный", {
@@ -216,7 +245,7 @@ TEAM_HOBO = DarkRP.createJob("Бездомный", {
     hasLicense = false,
     candemote = false,
     hobo = true,
-    category = "Citizens",
+    category = "Мирные",
 })
 
 if not DarkRP.disabledDefaults["modules"]["hungermod"] then
@@ -240,7 +269,7 @@ if not DarkRP.disabledDefaults["modules"]["hungermod"] then
 		},
         description = [[Повар готовит еду для жителей города.]],
         weapons = {},
-        command = "cook",
+        command = "Повар",
         max = 2,
         salary = 45,
         admin = 0,
@@ -335,7 +364,7 @@ DarkRP.createDemoteGroup("Gangsters", {TEAM_GANG, TEAM_MOB})
 Default categories
 ---------------------------------------------------------------------------*/
 DarkRP.createCategory{
-    name = "Citizens",
+    name = "Мирные",
     categorises = "jobs",
     startExpanded = true,
     color = Color(0, 107, 0, 255),
@@ -344,7 +373,7 @@ DarkRP.createCategory{
 }
 
 DarkRP.createCategory{
-    name = "Civil Protection",
+    name = "Государство",
     categorises = "jobs",
     startExpanded = true,
     color = Color(25, 25, 170, 255),
@@ -353,7 +382,7 @@ DarkRP.createCategory{
 }
 
 DarkRP.createCategory{
-    name = "Gangsters",
+    name = "Криминал",
     categorises = "jobs",
     startExpanded = true,
     color = Color(75, 75, 75, 255),
