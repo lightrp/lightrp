@@ -17,8 +17,8 @@ SWEP.DrawCrosshair = true
 
 SWEP.Base = "weapon_cs_base2"
 
-SWEP.Author = "DarkRP Developers"
-SWEP.Instructions = "Left click to pick up\nRight click to drop\nReload to open the menu"
+SWEP.Author = "AlexCookie"
+SWEP.Instructions = "ЛКМ чтобы поднять\nПКМ чтобы вытащить\nR чтобы открыть меню"
 SWEP.Contact = ""
 SWEP.Purpose = ""
 SWEP.IconLetter = ""
@@ -30,7 +30,7 @@ SWEP.WorldModel = ""
 
 SWEP.Spawnable = true
 SWEP.AdminOnly = true
-SWEP.Category = "DarkRP (Utility)"
+SWEP.Category = "LifeRp(Tools)"
 SWEP.Primary.ClipSize = -1
 SWEP.Primary.DefaultClip = 0
 SWEP.Primary.Automatic = false
