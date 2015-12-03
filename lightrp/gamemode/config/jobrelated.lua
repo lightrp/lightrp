@@ -35,7 +35,7 @@ TEAM_CITIZEN = DarkRP.createJob("Гражданин", {
     category = "Мирные",
 })
 
-TEAM_CITIZEN = DarkRP.createJob("Админ", {
+TEAM_ADMIN = DarkRP.createJob("Админ", {
     color = Color(255, 0, 0, 255),
     model = {
         "models/suits/male_01_closed_tie.mdl",
@@ -45,8 +45,8 @@ TEAM_CITIZEN = DarkRP.createJob("Админ", {
     },
     description = [[.]],
     weapons = {},
-    command = "citizen",
-    max = 15,
+    command = "admin",
+    max = 0,
     salary = GAMEMODE.Config.normalsalary,
     admin = 1,
     vote = false,
@@ -392,6 +392,15 @@ DarkRP.createCategory{
     sortOrder = 100,
 }
 
+DarkRP.createCategory{
+    name = "Админ",
+    categorises = "jobs",
+    startExpanded = true,
+    color = Color(0, 0, 255, 255),
+    canSee = fp{fn.Id, true},
+    sortOrder = 101,
+}
+	
 DarkRP.createCategory{
     name = "Государство",
     categorises = "jobs",
