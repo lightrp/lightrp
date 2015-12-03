@@ -9,8 +9,8 @@ if CLIENT then
     include("cl_menu.lua")
 end
 
-SWEP.PrintName = "Pocket"
-SWEP.Slot = 1
+SWEP.PrintName = "Инвентарь"
+SWEP.Slot = 0
 SWEP.SlotPos = 1
 SWEP.DrawAmmo = false
 SWEP.DrawCrosshair = true

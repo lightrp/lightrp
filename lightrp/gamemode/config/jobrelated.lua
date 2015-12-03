@@ -40,7 +40,7 @@ TEAM_POLICE = DarkRP.createJob("Рядовой полиции", {
     model = {"models/player/police.mdl", "models/player/police_fem.mdl"},
     description = [[Защитник каждого гражданина, который живет в городе.]],
     weapons = {"arrest_stick", "unarrest_stick", "weapon_glock2", "stunstick", "door_ram", "weaponchecker"},
-    command = "cp",
+    command = "cop",
     max = 5,
     salary = GAMEMODE.Config.normalsalary * 1.45,
     admin = 0,
@@ -49,6 +49,24 @@ TEAM_POLICE = DarkRP.createJob("Рядовой полиции", {
     ammo = {
         ["pistol"] = 90,
     },
+    category = "Civil Protection",
+})
+
+TEAM_POLICE = DarkRP.createJob("Капитан полиции", {
+    color = Color(25, 25, 170, 255),
+    model = {"models/player/police.mdl", "models/player/police_fem.mdl"},
+    description = [[Защитник каждого гражданина, который живет в городе.]],
+    weapons = {"arrest_stick", "unarrest_stick", "weapon_glock2", "stunstick", "door_ram", "weaponchecker"},
+    command = "cop2",
+    max = 5,
+    salary = GAMEMODE.Config.normalsalary * 1.45,
+    admin = 0,
+    vote = true,
+    hasLicense = true,
+    ammo = {
+        ["pistol"] = 90,
+    },
+	NeedToChangeFrom = TEAM_POLICE,
     category = "Civil Protection",
 })
 
