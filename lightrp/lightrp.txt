@@ -1,7 +1,7 @@
 "darkrp"
 {
 	"base"		"sandbox"
-    "title"  "DarkRP2"
+    "title"  "LightRP"
     "version"   "1.0"
     "menusystem"	"1"
 
