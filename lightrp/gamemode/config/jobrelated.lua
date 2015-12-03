@@ -52,7 +52,7 @@ TEAM_POLICE = DarkRP.createJob("Рядовой полиции", {
     category = "Civil Protection",
 })
 
-TEAM_POLICE = DarkRP.createJob("Капитан полиции", {
+TEAM_POLICEKAP = DarkRP.createJob("Капитан полиции", {
     color = Color(25, 25, 170, 255),
     model = {"models/player/police.mdl", "models/player/police_fem.mdl"},
     description = [[Защитник каждого гражданина, который живет в городе.]],
