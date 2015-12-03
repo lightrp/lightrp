@@ -32,7 +32,27 @@ TEAM_CITIZEN = DarkRP.createJob("Гражданин", {
     vote = false,
     hasLicense = false,
     candemote = false,
-    category = "Мирны",
+    category = "Мирные",
+})
+
+TEAM_CITIZEN = DarkRP.createJob("Админ", {
+    color = Color(255, 0, 0, 255),
+    model = {
+        "models/suits/male_01_closed_tie.mdl",
+        "models/suits/male_01_open_waistcoat.mdl",
+        "models/suits/Group01/Female_03.mdl",
+        "models/suits/Group01/Female_04.mdl",
+    },
+    description = [[.]],
+    weapons = {},
+    command = "citizen",
+    max = 15,
+    salary = GAMEMODE.Config.normalsalary,
+    admin = 1,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    category = "Админы",
 })
 
 TEAM_POLICE = DarkRP.createJob("Рядовой полиции", {
@@ -40,7 +60,7 @@ TEAM_POLICE = DarkRP.createJob("Рядовой полиции", {
     model = {"models/player/police.mdl", "models/player/police_fem.mdl"},
     description = [[Защитник каждого гражданина, который живет в городе.]],
     weapons = {"arrest_stick", "unarrest_stick", "weapon_glock2", "stunstick", "door_ram", "weaponchecker"},
-    command = "cop",
+    command = "cp",
     max = 5,
     salary = GAMEMODE.Config.normalsalary * 1.45,
     admin = 0,
@@ -50,24 +70,6 @@ TEAM_POLICE = DarkRP.createJob("Рядовой полиции", {
         ["pistol"] = 90,
     },
     category = "Государство",
-})
-
-TEAM_POLICEKAP = DarkRP.createJob("Капитан полиции", {
-    color = Color(25, 25, 170, 255),
-    model = {"models/player/police.mdl", "models/player/police_fem.mdl"},
-    description = [[Защитник каждого гражданина, который живет в городе.]],
-    weapons = {"arrest_stick", "unarrest_stick", "weapon_glock2", "stunstick", "door_ram", "weaponchecker"},
-    command = "cop2",
-    max = 5,
-    salary = GAMEMODE.Config.normalsalary * 1.45,
-    admin = 0,
-    vote = true,
-    hasLicense = true,
-    ammo = {
-        ["pistol"] = 90,
-    },
-	NeedToChangeFrom = TEAM_POLICE,
-    category = "Civil Protection",
 })
 
 TEAM_GANG = DarkRP.createJob("Бандит", {
